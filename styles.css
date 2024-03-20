@@ -1,8 +1,8 @@
 .calc {
-    margin: 25% auto;
+    margin: 200px auto;
     display: grid;
     height: 500px;
-    width: 400px;
+    width: 350px;
     grid-template-areas: 
         "display display display display"
         "clear clear clear divide"
@@ -10,10 +10,29 @@
         "four five six subtract"
         "one two three add"
         "zero zero equals equals";
-    gap: 3px;
+    gap: 7px;
+    border-radius: 10%; 
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 15px;
+    background-color: blue;
 }
 
-#input { grid-area: display; }
+.input { 
+    grid-area: display;
+    border-width: 2px;
+    border-color: gray; 
+    border-style: solid;
+    border-radius: 15%;
+    height: 35px;
+    margin: auto 0;
+    text-align: right;
+    font-size: x-large;
+    padding: 15px;
+    background-color: azure;
+}
+
 #clear { grid-area: clear; }
 #divide { grid-area: divide; }
 #seven { grid-area: seven; }
@@ -34,6 +53,13 @@
 .button {
     background-color: grey;
     border-radius: 25%;
-    border: 4px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: x-large;
+    font-weight: bold;
+    border-style: inset;
+    border-width: 2px;
+    border-color: black;
 }
+
 
